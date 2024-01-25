@@ -30,29 +30,50 @@ Work experience
 ======
 
 **Graduate Student Researcher**
+
 Courant Institute of Mathematical Sciences, New York University
+
 Neural Galerkin Schemes for Plasma Physics (Master's Thesis)
+
 New York, USA
+
 *Sep 2023 - Feb 2024*
 
+
 **Research & Development Intern**
+
 Dassault Systèmes
+
 Human Cardiology Twin Technology
+
 Vélizy-Villacoublay, France
+
 *Mar 2023 - Aug 2023*
 
+
 **Data Science Intern**
+
 SBB CFF FFS
+
 Center of Competence for Energy Storage and Alternative Engines
+
 Statistical Modeling and Analysis of Alternative Engines
+
 Bern, Switzerland
+
 *Feb 2021 - Sep 2021*
 
+
 **Undergraduate Student Researcher**
+
 Ecole Polytechnique (IP Paris)
+
 Centre de Mathématiques Appliquéés
+
 Stokesian Microswimmers
+
 Palaiseau, France
+
 *Apr 2020 - Jul 2020*
 
     
