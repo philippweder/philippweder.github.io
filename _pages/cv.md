@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-**EPFL**
+**EPFL**  
 MSc in Computational Sciences and Engineering, 2024 (expected)  
 Lausanne, Switzerland  
 *2021 - 2024 (expected)*
@@ -61,9 +61,9 @@ Palaiseau, France
     
 Publications
 ======
-  <ul>{% for post in site.publications %}
+{% for post in site.publications %}
     {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+  {% endfor %}
   
 Talks
 ======
