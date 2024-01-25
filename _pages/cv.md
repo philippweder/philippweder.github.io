@@ -57,23 +57,10 @@ Centre de Mathématiques Appliquéés
 Stokesian Microswimmers  
 Palaiseau, France  
 *Apr 2020 - Jul 2020*
-
-    
-Publications
-======
-{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}
   
-Talks
+<!-- Talks
 ======
   <ul>{% for post in site.talks %}
     {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
+  {% endfor %}</ul> -->
+
