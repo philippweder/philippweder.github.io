@@ -10,6 +10,6 @@ citation: 'François Alouges; Aline Lefebvre-Lepot; Philipp Weder. Optimal strok
 ---
 This paper is about the number 1. The number 2 is left for future work.
 
-[Download paper here]([http://academicpages.github.io/files/paper1.pdf](http://academicpages.github.io/files/paper1.pdf](https://msia.centre-mersenne.org/item/10.5802/msia.23.pdf)
+[Download paper here](https://msia.centre-mersenne.org/item/10.5802/msia.23.pdf)
 
 Recommended citation: François Alouges; Aline Lefebvre-Lepot; Philipp Weder. Optimal strokes for the 4-sphere swimmer at low Reynolds number in the regime of small deformations. MathematicS In Action, Tome 11 (2022) no. 1, pp. 167-192. doi : 10.5802/msia.23. https://msia.centre-mersenne.org/articles/10.5802/msia.23/.
