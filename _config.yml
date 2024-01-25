@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Philipp Weder"
+title                    : "About"
 title_separator          : "-"
 name                     : &name "Philipp Weder"
 description              : &description "CSE Master's student at EPFL"
