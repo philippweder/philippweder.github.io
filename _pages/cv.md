@@ -11,9 +11,20 @@ redirect_from:
 
 Education
 ======
-* MSc in Computational Sciences and Engineering, 2024 (expected)
-* International Exchange Program, Ecole Polytechnique (IP Paris), 2019-2020
-* BSc in Mathematics, ETH Zurich, 2021
+**EPFL**
+MSc in Computational Sciences and Engineering, 2024 (expected)
+Lausanne, Switzerland
+*2021 - 2024 (expected)*
+
+**Ecole Polytechnique (IP Paris)**
+International Exchange Program
+Palaiseau, France
+*2019 - 2020*
+
+**ETH Zürich**
+BSc in Mathematics
+Zürich, Switzerland
+*2017 - 2020*
 
 Work experience
 ======
