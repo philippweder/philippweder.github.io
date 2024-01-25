@@ -59,16 +59,24 @@ $lighter-gray               : #EAE9E9;
 $body-color                 : #fff;
 $background-color           : #fff;
 $code-background-color      : #fafafa;
-$code-background-color-dark : $light-gray;
-$text-color                 : $dark-gray;
-$border-color               : $lighter-gray;
+$code-background-color-dark : $epfl-perle;
+$text-color                 : $epfl-taupe;
+$border-color               : $epfl-perle;
 
-/*$primary-color              : #7a8288;*/
-$primary-color              : #E30613;
+$primary-color              : #7a8288;
 $success-color              : #62c462;
 $warning-color              : #f89406;
 $danger-color               : #ee5f5b;
 $info-color                 : #52adc8;
+
+// epfl colors
+$epfl-rouge                   : #FF0000;
+$epfl-groseille                   : #B51F1F;
+$epfl-leman                   : #00A79F;
+$epfl-canard                   : #007480;
+$epfl-taupe                  : #413D3A;
+$epfl-perle                 : #CAC7C7;
+
 
 /* brands */
 $behance-color              : #1769FF;
@@ -94,7 +102,7 @@ $xing-color                 : #006567;
 
 
 /* links */
-$link-color                 : $info-color;
+$link-color                 : $epfl-leman;
 $link-color-hover           : mix(#000, $link-color, 25%);
 $link-color-visited         : mix(#fff, $link-color, 25%);
 $masthead-link-color        : $primary-color;
