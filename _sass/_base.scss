@@ -110,17 +110,44 @@ blockquote {
 }
 
 /* links */
-
 a {
-  &:focus {
-    @extend %tab-focus;
-  }
+  color: $text-color; /* Set the color of the link text */
+  text-decoration: none; /* Remove the default underline */
 
   &:hover,
   &:active {
     outline: 0;
   }
+
+  &:after {
+    content: ""; /* Create pseudo-element for underline */
+    display: block;
+    width: 100%; /* Full width of the link */
+    height: 1px; /* Thickness of the underline */
+    background-color: $link-color; /* Color of the underline */
+    transition: height 0.2s ease; /* Smooth transition for underline */
+  }
+
+  &:hover:after { /* Change underline color on hover */
+    height: 2px; /* Adjust thickness of the underline on hover */
+    background-color: $link-color-hover; /* Change color of the underline on hover */
+  }
 }
+
+a:focus {
+  @extend %tab-focus;
+}
+
+// a {
+//   &:focus {
+//     @extend %tab-focus;
+//   }
+
+//   &:hover,
+//   &:active {
+//     outline: 0;
+//   }
+// }
 
 /* code */
 
