@@ -5,6 +5,34 @@
 /*
    Typography
    ========================================================================== */
+/* Suisse Int'l typefaces */
+
+/* Define Suisse Int'l Ultralight */
+@font-face {
+   font-family: 'Suisse Int\'l Ultralight';
+   src: url('/assets/fonts/suisse/SuisseIntl-Ultralight-WebM.woff2') format('woff2'),
+         url('/assets/fonts/suisse/SuisseIntl-Ultralight-WebM.woff') format('woff'),
+         url('/assets/fonts/suisse/SuisseIntl-Ultralight-WebM.ttf') format('truetype');
+   font-weight: 300; // Specify the weight for Light
+}
+
+/* Define Suisse Int'l Light */
+@font-face {
+   font-family: 'Suisse Int\'l Light';
+   src: url('/assets/fonts/suisse/SuisseIntl-Light-WebM.woff2') format('woff2'),
+         url('/assets/fonts/suisse/SuisseIntl-Light-WebM.woff') format('woff'),
+         url('/assets/fonts/suisse/SuisseIntl-Light-WebM.ttf') format('truetype');
+   font-weight: 300; // Specify the weight for Light
+}
+
+/* Define Suisse Int'l Medium */
+@font-face {
+   font-family: 'Suisse Int\'l Medium';
+   src: url('/assets/fonts/suisse/SuisseIntl-Medium-WebM.woff2') format('woff2'),
+         url('/assets/fonts/suisse/SuisseIntl-Medium-WebM.woff') format('woff'),
+         url('/assets/fonts/suisse/SuisseIntl-Medium-WebM.ttf') format('truetype');
+   font-weight: 500; // Specify the weight for Medium
+}
 
 $doc-font-size              : 12;
 
@@ -20,6 +48,9 @@ $monospace                  : Monaco, Consolas, "Lucida Console", monospace;
 /* sans serif typefaces */
 $sans-serif-narrow          : $sans-serif;
 $helvetica                  : Helvetica, "Helvetica Neue", Arial, sans-serif;
+$suisse-intl-ultralight : "Suisse Int\'l Ultralight";
+$suisse-intl-light : "Suisse Int\'l Light";
+$suisse-intl-medium : "Suisse Int\'l Medium";
 
 /* serif typefaces */
 $georgia                    : Georgia, serif;
@@ -28,9 +59,10 @@ $bodoni                     : "Bodoni MT", serif;
 $calisto                    : "Calisto MT", serif;
 $garamond                   : Garamond, serif;
 
-$global-font-family         : $helvetica;
-$header-font-family         : $helvetica;
-$caption-font-family        : $serif;
+$global-font-family         : $suisse-intl-light;
+$header-font-family         : $suisse-intl-medium;
+$caption-font-family        : $suisse-intl-ultralight;
+
 
 /* type scale */
 $type-size-1                : 2.441em;  // ~39.056px
