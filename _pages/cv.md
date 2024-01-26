@@ -12,7 +12,7 @@ redirect_from:
 Education
 ======
 **EPFL**  
-MSc in Computational Sciences and Engineering, 2024 (expected)  
+MSc in Computational Sciences and Engineering
 Lausanne, Switzerland  
 *2021 - 2024 (expected)*
 
