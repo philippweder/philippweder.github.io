@@ -290,7 +290,7 @@ DEPENDENCIES
   faraday-retry
   github-pages
   hawkins
-  jekyll (= 3.9.3)
+  jekyll
   jekyll-feed
   jekyll-sitemap
   webrick
