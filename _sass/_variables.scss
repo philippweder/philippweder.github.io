@@ -13,7 +13,7 @@
    src: url('/assets/fonts/suisse/SuisseIntl-Ultralight-WebM.woff2') format('woff2'),
          url('/assets/fonts/suisse/SuisseIntl-Ultralight-WebM.woff') format('woff'),
          url('/assets/fonts/suisse/SuisseIntl-Ultralight-WebM.ttf') format('truetype');
-   font-weight: 300; // Specify the weight for Light
+   font-weight: 250; // Specify the weight for Light
 }
 
 /* Define Suisse Int'l Light */
@@ -34,23 +34,58 @@
    font-weight: 500; // Specify the weight for Medium
 }
 
+/* Define Suisse Neue Light */
+@font-face {
+   font-family: 'Suisse Neue Light';
+   src: url('/assets/fonts/suisse/SuisseNeue-Light-WebS.woff2') format('woff2'),
+         url('/assets/fonts/suisse/SuisseNeue-Light-WebS.woff') format('woff'),
+         url('/assets/fonts/suisse/SuisseNeue-Light-WebS.ttf') format('truetype');
+   font-weight: 300; // Specify the weight for Medium
+}
+
+/* Define Suisse Int'l Mono Regular */
+@font-face {
+   font-family: 'Suisse Int\'l Mono Regular';
+   src: url('/assets/fonts/suisse/SuisseIntlMono-Regular-WebS.woff2') format('woff2'),
+         url('/assets/fonts/suisse/SuisseIntlMono-Regular-WebS.woff') format('woff'),
+         url('/assets/fonts/suisse/SuisseIntlMono-Regular-WebS.ttf') format('truetype');
+   font-weight: 400; // Specify the weight for Medium
+}
+
+/* Define Suisse Int'l Condensed Light */
+@font-face {
+   font-family: 'Suisse Int\'l Cond Light';
+   src: url('/assets/fonts/suisse/SuisseIntlCond-Light-WebS.woff2') format('woff2'),
+         url('/assets/fonts/suisse/SuisseIntlCond-Light-WebS.woff') format('woff'),
+         url('/assets/fonts/suisse/SuisseIntlCond-Light-WebS.ttf') format('truetype');
+   font-weight: 400; // Specify the weight for Medium
+}
+
 $doc-font-size              : 12;
 
 /* paragraph indention */
 $paragraph-indent           : false; // true, false (default)
 $indent-var                 : 1.3em;
 
-/* system typefaces */
-$serif                      : Georgia, Times, serif;
-$sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
-$monospace                  : Monaco, Consolas, "Lucida Console", monospace;
-
-/* sans serif typefaces */
-$sans-serif-narrow          : $sans-serif;
-$helvetica                  : Helvetica, "Helvetica Neue", Arial, sans-serif;
+/* suisse typefaces */
 $suisse-intl-ultralight : "Suisse Int\'l Ultralight";
 $suisse-intl-light : "Suisse Int\'l Light";
 $suisse-intl-medium : "Suisse Int\'l Medium";
+$suisse-neue-light: "Suisse Neue Light";
+$suisse-intl-mono-regular: "Suisse Int\'l Mono Regular";
+$suisse-intl-cond-light: "Suisse Int\'l Cond Light";
+
+/* system typefaces */
+// $serif                      : Georgia, Times, serif;
+$serif                      : $suisse-neue-light;
+// $sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+$sans-serif                    : $suisse-intl-light;
+// $monospace                  : Monaco, Consolas, "Lucida Console", monospace;
+$monospace                  : $suisse-intl-mono-regular;
+
+/* sans serif typefaces */
+$sans-serif-narrow          : $suisse-intl-cond-light;
+$helvetica                  : Helvetica, "Helvetica Neue", Arial, sans-serif;
 
 /* serif typefaces */
 $georgia                    : Georgia, serif;
