@@ -25,6 +25,15 @@
    font-weight: 300; // Specify the weight for Light
 }
 
+/* Define Suisse Int'l Regular */
+@font-face {
+   font-family: 'Suisse Int\'l Regular';
+   src: url('/assets/fonts/suisse/SuisseIntl-Regular-WebM.woff2') format('woff2'),
+         url('/assets/fonts/suisse/SuisseIntl-Regular-WebM.woff') format('woff'),
+         url('/assets/fonts/suisse/SuisseIntl-Regular-WebM.ttf') format('truetype');
+   font-weight: 300; // Specify the weight for Light
+}
+
 /* Define Suisse Int'l Medium */
 @font-face {
    font-family: 'Suisse Int\'l Medium';
@@ -61,6 +70,15 @@
    font-weight: 400; // Specify the weight for Medium
 }
 
+/* Define Suisse Int'l Semi Bold */
+@font-face {
+   font-family: 'Suisse Int\'l Semi Bold';
+   src: url('/assets/fonts/suisse/SuisseIntl-SemiBold-WebS.woff2') format('woff2'),
+         url('/assets/fonts/suisse/SuisseIntl-SemiBold-WebS.woff') format('woff'),
+         url('/assets/fonts/suisse/SuisseIntl-SemiBold-WebS.ttf') format('truetype');
+   font-weight: 400; // Specify the weight for Medium
+}
+
 $doc-font-size              : 12;
 
 /* paragraph indention */
@@ -74,12 +92,14 @@ $suisse-intl-medium : "Suisse Int\'l Medium";
 $suisse-neue-light: "Suisse Neue Light";
 $suisse-intl-mono-regular: "Suisse Int\'l Mono Regular";
 $suisse-intl-cond-light: "Suisse Int\'l Cond Light";
+$suisse-intl-semi-bold: "Suisse Int\'l Semi Bold";
+$suisse-intl-regular: "Suisse Int\'l Regular";
 
 /* system typefaces */
 // $serif                      : Georgia, Times, serif;
 $serif                      : $suisse-neue-light;
 // $sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
-$sans-serif                    : $suisse-intl-light;
+$sans-serif                    : $suisse-intl-regular;
 // $monospace                  : Monaco, Consolas, "Lucida Console", monospace;
 $monospace                  : $suisse-intl-mono-regular;
 
@@ -179,9 +199,9 @@ $xing-color                 : #006567;
 
 
 /* links */
-$link-color                 : $epfl-leman;
-$link-color-hover           : mix(#000, $link-color, 25%);
-$link-color-visited         : mix(#fff, $link-color, 25%);
+$link-color                 : $primary-color;
+$link-color-hover           : $epfl-rouge;
+$link-color-visited         : mix(#fff, $epfl-rouge, 25%);
 $masthead-link-color        : $primary-color;
 // $masthead-link-color-hover  : mix(#000, $primary-color, 25%);
 $masthead-link-color-hover  : $epfl-rouge;
