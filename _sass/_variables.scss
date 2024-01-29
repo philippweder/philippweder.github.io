@@ -136,7 +136,7 @@ $gray                       : #7a8288;
 $dark-gray                  : #413C3A;
 $darker-gray                : mix(#000, $dark-gray, 60%);
 /*$light-gray                 : mix(#fff, $gray, 50%);*/
-$light-gray                 : #CAC7C7;
+$light-gray                 : $epfl-perle;
 /*$lighter-gray               : mix(#fff, $gray, 90%);*/
 $lighter-gray               : #EAE9E9;
 
@@ -183,7 +183,8 @@ $link-color                 : $epfl-leman;
 $link-color-hover           : mix(#000, $link-color, 25%);
 $link-color-visited         : mix(#fff, $link-color, 25%);
 $masthead-link-color        : $primary-color;
-$masthead-link-color-hover  : mix(#000, $primary-color, 25%);
+// $masthead-link-color-hover  : mix(#000, $primary-color, 25%);
+$masthead-link-color-hover  : $epfl-rouge;
 
 
 /*
