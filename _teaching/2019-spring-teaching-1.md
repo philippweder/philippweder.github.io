@@ -1,7 +1,7 @@
 ---
-title: "Teaching assistant - Numerical methods for physicists"
+title: "Numerical methods for physicists"
 collection: teaching
-type: "Undergraduate course"
+type: "Teaching assistant"
 permalink: /teaching/2019-spring-teaching-1
 venue: "ETHZ, D-MATH"
 date: 2019-02-01
