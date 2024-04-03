@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "About"
 title_separator          : "-"
 name                     : &name "Philipp Weder"
-description              : &description "CSE Master's student at EPFL"
+description              : &description "PhD student at EPFL"
 url                      : https://philippweder.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "philippweder/philippweder.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Philipp Weder"
   avatar           : "profile.jpg"
-  bio              : "CSE Master's student at EPFL"
+  bio              : "PhD student at MNS EPFL"
   location         : "Lausanne, Switzerland"
   employer         :
   pubmed           : 

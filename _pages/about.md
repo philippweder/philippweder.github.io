@@ -8,4 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-Welcome to my personal website!
+Hi there! Welcome to my personal website.
+
+I am a PhD student at the Chair for Numerical Methods and Simulation at EPFL under the supervision of Prof. Annalisa Buffa. I work on isogeometric analysis and analysis aware defeaturing.
