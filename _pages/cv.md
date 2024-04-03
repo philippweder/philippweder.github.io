@@ -12,9 +12,14 @@ redirect_from:
 Education
 ======
 **EPFL**  
+PhD in Mathematics
+Lausanne, Switzerland  
+*2024 - present*
+
+**EPFL**  
 MSc in Computational Sciences and Engineering  
 Lausanne, Switzerland  
-*2021 - 2024 (expected)*
+*2021 - 2024*
 
 **Ecole Polytechnique (IP Paris)**  
 International Exchange Program  
