@@ -38,7 +38,7 @@ Work experience
 Courant Institute of Mathematical Sciences, New York University  
 Neural Galerkin Schemes for Plasma Physics (Master's Thesis)  
 New York, USA  
-*Sep 2023 - Feb 2024*  
+*Sep 2023 - Mar 2024*  
 
 
 **Research & Development Intern**  
