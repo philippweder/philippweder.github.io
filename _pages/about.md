@@ -10,4 +10,4 @@ redirect_from:
 
 Hi there! Welcome to my personal website.
 
-I am a PhD student at the Chair for Numerical Methods and Simulation at EPFL under the supervision of Prof. Annalisa Buffa. I work on isogeometric analysis and analysis aware defeaturing.
+I am a PhD student at the Chair for Numerical Methods and Simulation ([MNS](https://mns.epfl.ch)) at EPFL under the supervision of Prof. Annalisa Buffa. I work on isogeometric analysis and analysis aware defeaturing.
