@@ -1,0 +1,8 @@
+{% include base_path %}
+
+<div class="news" style="display: flex; align-items: baseline;">
+    <strong style="flex-shrink: 0; width: 6em;">{{ post.date | date: "%b %Y" }}</strong>
+    <span style="flex-shrink: 0; width: 2em;"></span> <!-- Creates tab-like space -->
+    <span class="news-content" style="flex-grow: 1; white-space: normal;">{{ post.content | markdownify }}</span>
+</div>
+
