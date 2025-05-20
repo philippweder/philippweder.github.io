@@ -1,9 +1,9 @@
 ---
-title: "Analysis III for computer science"
+title: "Parallel and High-Performance Computing"
 collection: teaching
 type: "Main teaching assistant"
-permalink: /teaching/2024-fall-teaching-1
+permalink: /teaching/2025-spring-teaching-1
 venue: "EPFL, Institute of Mathematics"
-date: 2024-09-12
+date: 2025-02-24
 location: "Lausanne, Switzerland"
 ---
