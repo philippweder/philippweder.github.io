@@ -10,7 +10,7 @@ table {
   border-collapse: collapse;
   border: 1px solid $light-gray;
 
-  & + table {
+  &+table {
     margin-top: 1em;
   }
 }
@@ -33,6 +33,27 @@ td {
   border-right: 1px solid $light-gray;
 }
 
-tr, td, th {
+tr,
+td,
+th {
   vertical-align: middle;
+}
+
+/* Clean table styling for publications page */
+.archive table {
+  border: none;
+  margin-bottom: 0;
+
+  tr,
+  td,
+  th {
+    border: none;
+    border-bottom: none;
+    border-right: none;
+  }
+
+  td {
+    padding: 0.25em 0;
+    vertical-align: top;
+  }
 }

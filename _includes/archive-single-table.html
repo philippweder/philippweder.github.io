@@ -1,0 +1,30 @@
+{% include base_path %}
+
+{% if post.id %}
+{% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+{% assign title = post.title %}
+{% endif %}
+
+<tr>
+    <td style="vertical-align: top; width: 50px; padding-right: 15px;">[{{ forloop.index }}]</td>
+    <td style="vertical-align: top;">
+        {% if post.link %}
+        <a href="{{ post.link }}">{{ title }}</a>
+        {% else %}
+        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+        {% endif %}
+
+        {% if post.collection == 'publications' %}
+        . <em>{{ post.venue }}</em>, {{ post.date | default: "1900-01-01" | date: "%Y" }}.
+        {% elsif post.collection == 'preprints' %}
+        . <em>{{ post.venue }}</em>, {{ post.date | default: "1900-01-01" | date: "%Y" }}.
+        {% endif %}
+
+        {% if post.paperurl %}
+        <a href="{{ post.paperurl }}"> [PDF]</a>
+        {% endif %}
+
+        <a href="{{ base_path }}{{ post.url }}" rel="permalink"> [Abstract]</a>
+    </td>
+</tr>
