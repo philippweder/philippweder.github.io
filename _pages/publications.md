@@ -29,6 +29,16 @@ author_profile: true
 {% endfor %}
 </table>
 
+## Patents
+
+{% include base_path %}
+
+<table style="width: 100%; border-collapse: collapse; border: none;">
+{% for post in site.patents reversed %}
+  {% include archive-single-table.html %}
+{% endfor %}
+</table>
+
 ## Talks
 
 {% include base_path %}

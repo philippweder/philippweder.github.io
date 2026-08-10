@@ -19,10 +19,16 @@
         . <em>{{ post.venue }}</em>, {{ post.date | default: "1900-01-01" | date: "%Y" }}.
         {% elsif post.collection == 'preprints' %}
         . <em>{{ post.venue }}</em>, {{ post.date | default: "1900-01-01" | date: "%Y" }}.
+        {% elsif post.collection == 'patents' %}
+        . {{ post.venue }}, {{ post.date | default: "1900-01-01" | date: "%Y" }}.
         {% endif %}
 
         {% if post.paperurl %}
+        {% if post.collection == 'patents' %}
+        <a href="{{ post.paperurl }}"> [Patent]</a>
+        {% else %}
         <a href="{{ post.paperurl }}"> [PDF]</a>
+        {% endif %}
         {% endif %}
 
         <a href="{{ base_path }}{{ post.url }}" rel="permalink"> [Abstract]</a>
