@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Poisson advent calendar</title>
+<meta name="description" content="One numerical picture and the method behind it, each day of December 2026.">
+<meta property="og:title" content="Poisson advent calendar">
+<meta property="og:description" content="One numerical picture and the method behind it, each day of December 2026.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.philippweder.com/advent/">
+<link rel="canonical" href="https://www.philippweder.com/advent/">
+<meta property="og:image" content="https://www.philippweder.com/advent/assets/og-calendar.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/advent/assets/advent.css">
+<script src="/advent/assets/advent.js" defer></script>
+</head>
+<body class="advent-calendar" data-end="2026-12-24T23:00:00Z">
+<header class="advent-header">
+<a href="https://www.philippweder.com/">philippweder.com</a>
+<a href="/advent/">Poisson advent calendar</a>
+</header>
+<main>
+<section id="countdown" data-launch="2026-11-30T23:00:00Z">
+<p class="countdown-clock">The first door opens in <span data-unit="days">–</span> days <span data-unit="hours">–</span> hours <span data-unit="minutes">–</span> minutes <span data-unit="seconds">–</span> seconds</p>
+<p class="countdown-late" hidden>The first door opens shortly</p>
+</section>
+<div id="calendar">
+<div class="facade"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 1000" aria-hidden="true">
+<rect id="facade-sky" x="0" y="0" width="600" height="1000" fill="#14213D"/>
+<g id="facade-stars" fill="#F7F9FC">
+<circle cx="40" cy="40" r="2"/>
+<circle cx="95" cy="175" r="2"/>
+<circle cx="170" cy="52" r="3"/>
+<circle cx="215" cy="28" r="2"/>
+<circle cx="240" cy="118" r="2"/>
+<circle cx="335" cy="40" r="3"/>
+<circle cx="548" cy="168" r="2"/>
+<circle cx="572" cy="44" r="3"/>
+<circle cx="515" cy="96" r="2"/>
+<circle cx="18" cy="130" r="2"/>
+<circle cx="275" cy="70" r="2"/>
+<circle cx="580" cy="120" r="2"/>
+<circle cx="60" cy="215" r="2"/>
+</g>
+<circle cx="110" cy="92" r="30" fill="#E0A526"/>
+<circle cx="124" cy="84" r="27" fill="#14213D"/>
+<g id="facade-chimney">
+<circle cx="444" cy="84" r="9" fill="#F7F9FC" opacity="0.75"/>
+<circle cx="454" cy="62" r="12" fill="#F7F9FC" opacity="0.75"/>
+<circle cx="470" cy="36" r="15" fill="#F7F9FC" opacity="0.75"/>
+<rect x="420" y="104" width="48" height="110" fill="#A4243B" stroke="#F7F9FC" stroke-width="3"/>
+<rect x="414" y="92" width="60" height="16" rx="5" fill="#F7F9FC"/>
+</g>
+<g id="facade-roof">
+<polygon points="36,244 300,96 564,244" fill="#A4243B" stroke="#F7F9FC" stroke-width="12" stroke-linejoin="round"/>
+<polygon points="300,90 410,158 396,170 380,160 364,172 348,161 332,173 316,162 300,174 284,162 268,173 252,161 236,172 220,160 204,170 190,158" fill="#F7F9FC"/>
+</g>
+<g id="facade-house">
+<rect x="62" y="240" width="476" height="720" fill="#1E6B45" stroke="#F7F9FC" stroke-width="4"/>
+<path d="M68 244 h10 l-5 12 z M92 244 h10 l-5 14 z M116 244 h10 l-5 9 z M140 244 h10 l-5 13 z M164 244 h10 l-5 12 z M188 244 h10 l-5 14 z M212 244 h10 l-5 9 z M236 244 h10 l-5 13 z M260 244 h10 l-5 12 z M284 244 h10 l-5 14 z M308 244 h10 l-5 9 z M332 244 h10 l-5 13 z M356 244 h10 l-5 12 z M380 244 h10 l-5 14 z M404 244 h10 l-5 9 z M428 244 h10 l-5 13 z M452 244 h10 l-5 12 z M476 244 h10 l-5 14 z M500 244 h10 l-5 9 z M524 244 h10 l-5 13 z" fill="#F7F9FC"/>
+</g>
+<g id="facade-frames" fill="none" stroke="#F7F9FC" stroke-width="4">
+<rect x="88" y="264" width="88" height="88"/>
+<rect x="200" y="264" width="88" height="88"/>
+<rect x="312" y="264" width="88" height="88"/>
+<rect x="424" y="264" width="88" height="88"/>
+<rect x="88" y="364" width="88" height="88"/>
+<rect x="200" y="364" width="88" height="88"/>
+<rect x="312" y="364" width="88" height="88"/>
+<rect x="424" y="364" width="88" height="88"/>
+<rect x="88" y="464" width="88" height="88"/>
+<rect x="200" y="464" width="88" height="88"/>
+<rect x="312" y="464" width="88" height="88"/>
+<rect x="424" y="464" width="88" height="88"/>
+<rect x="88" y="564" width="88" height="88"/>
+<rect x="200" y="564" width="88" height="88"/>
+<rect x="312" y="564" width="88" height="88"/>
+<rect x="424" y="564" width="88" height="88"/>
+<rect x="88" y="664" width="88" height="88"/>
+<rect x="200" y="664" width="88" height="88"/>
+<rect x="312" y="664" width="88" height="88"/>
+<rect x="424" y="664" width="88" height="88"/>
+<rect x="88" y="764" width="88" height="88"/>
+<rect x="200" y="764" width="88" height="88"/>
+<rect x="312" y="764" width="88" height="88"/>
+<rect x="424" y="764" width="88" height="88"/>
+</g>
+<g id="facade-sills" fill="#F7F9FC">
+<rect x="84" y="354" width="96" height="6"/>
+<rect x="196" y="354" width="96" height="6"/>
+<rect x="308" y="354" width="96" height="6"/>
+<rect x="420" y="354" width="96" height="6"/>
+<rect x="84" y="454" width="96" height="6"/>
+<rect x="196" y="454" width="96" height="6"/>
+<rect x="308" y="454" width="96" height="6"/>
+<rect x="420" y="454" width="96" height="6"/>
+<rect x="84" y="554" width="96" height="6"/>
+<rect x="196" y="554" width="96" height="6"/>
+<rect x="308" y="554" width="96" height="6"/>
+<rect x="420" y="554" width="96" height="6"/>
+<rect x="84" y="654" width="96" height="6"/>
+<rect x="196" y="654" width="96" height="6"/>
+<rect x="308" y="654" width="96" height="6"/>
+<rect x="420" y="654" width="96" height="6"/>
+<rect x="84" y="754" width="96" height="6"/>
+<rect x="196" y="754" width="96" height="6"/>
+<rect x="308" y="754" width="96" height="6"/>
+<rect x="420" y="754" width="96" height="6"/>
+<rect x="84" y="854" width="96" height="6"/>
+<rect x="196" y="854" width="96" height="6"/>
+<rect x="308" y="854" width="96" height="6"/>
+<rect x="420" y="854" width="96" height="6"/>
+</g>
+<g id="facade-windows" fill="#E0A526">
+<rect id="window-01" x="90" y="466" width="84" height="84"/>
+<rect id="window-02" x="314" y="666" width="84" height="84"/>
+<rect id="window-03" x="202" y="266" width="84" height="84"/>
+<rect id="window-04" x="426" y="466" width="84" height="84"/>
+<rect id="window-05" x="90" y="666" width="84" height="84"/>
+<rect id="window-06" x="314" y="366" width="84" height="84"/>
+<rect id="window-07" x="202" y="766" width="84" height="84"/>
+<rect id="window-08" x="202" y="566" width="84" height="84"/>
+<rect id="window-09" x="426" y="266" width="84" height="84"/>
+<rect id="window-10" x="314" y="466" width="84" height="84"/>
+<rect id="window-11" x="426" y="666" width="84" height="84"/>
+<rect id="window-12" x="90" y="366" width="84" height="84"/>
+<rect id="window-13" x="90" y="766" width="84" height="84"/>
+<rect id="window-14" x="314" y="566" width="84" height="84"/>
+<rect id="window-15" x="426" y="366" width="84" height="84"/>
+<rect id="window-16" x="202" y="666" width="84" height="84"/>
+<rect id="window-17" x="90" y="266" width="84" height="84"/>
+<rect id="window-18" x="426" y="766" width="84" height="84"/>
+<rect id="window-19" x="202" y="466" width="84" height="84"/>
+<rect id="window-20" x="314" y="766" width="84" height="84"/>
+<rect id="window-21" x="90" y="566" width="84" height="84"/>
+<rect id="window-22" x="314" y="266" width="84" height="84"/>
+<rect id="window-23" x="426" y="566" width="84" height="84"/>
+<rect id="window-24" x="202" y="366" width="84" height="84"/>
+</g>
+<g id="facade-ground">
+<path d="M0 948 Q75 930 150 946 T300 944 T450 946 T600 940 V1000 H0 Z" fill="#F7F9FC"/>
+</g>
+<g id="facade-door">
+<path d="M262 950 V890 Q262 868 300 868 Q338 868 338 890 V950 Z" fill="#A4243B" stroke="#E0A526" stroke-width="5"/>
+<circle cx="300" cy="900" r="14" fill="none" stroke="#1E6B45" stroke-width="7"/>
+<circle cx="300" cy="886" r="4" fill="#E0A526"/>
+<circle cx="324" cy="920" r="4" fill="#E0A526"/>
+<rect x="250" y="950" width="100" height="10" fill="#F7F9FC" stroke="#14213D" stroke-width="2"/>
+</g>
+<g id="facade-tree-left">
+<rect x="26" y="945" width="8" height="12" fill="#A4243B"/>
+<polygon points="30,800 8,860 52,860" fill="#1E6B45" stroke="#F7F9FC" stroke-width="2"/>
+<polygon points="30,828 4,900 56,900" fill="#1E6B45" stroke="#F7F9FC" stroke-width="2"/>
+<polygon points="30,860 2,945 58,945" fill="#1E6B45" stroke="#F7F9FC" stroke-width="2"/>
+<circle cx="24" cy="842" r="3.5" fill="#A4243B"/>
+<circle cx="38" cy="850" r="3.5" fill="#A4243B"/>
+<circle cx="18" cy="880" r="3.5" fill="#A4243B"/>
+<circle cx="42" cy="888" r="3.5" fill="#A4243B"/>
+<circle cx="28" cy="920" r="3.5" fill="#A4243B"/>
+<circle cx="46" cy="928" r="3.5" fill="#A4243B"/>
+<circle cx="12" cy="930" r="3.5" fill="#A4243B"/>
+<circle cx="30" cy="800" r="5" fill="#E0A526"/>
+</g>
+<g id="facade-tree-right">
+<rect x="566" y="945" width="8" height="12" fill="#A4243B"/>
+<polygon points="570,800 592,860 548,860" fill="#1E6B45" stroke="#F7F9FC" stroke-width="2"/>
+<polygon points="570,828 596,900 544,900" fill="#1E6B45" stroke="#F7F9FC" stroke-width="2"/>
+<polygon points="570,860 598,945 542,945" fill="#1E6B45" stroke="#F7F9FC" stroke-width="2"/>
+<circle cx="576" cy="842" r="3.5" fill="#A4243B"/>
+<circle cx="562" cy="850" r="3.5" fill="#A4243B"/>
+<circle cx="582" cy="880" r="3.5" fill="#A4243B"/>
+<circle cx="558" cy="888" r="3.5" fill="#A4243B"/>
+<circle cx="572" cy="920" r="3.5" fill="#A4243B"/>
+<circle cx="554" cy="928" r="3.5" fill="#A4243B"/>
+<circle cx="588" cy="930" r="3.5" fill="#A4243B"/>
+<circle cx="570" cy="800" r="5" fill="#E0A526"/>
+</g>
+</svg></div>
+<span class="door is-locked" data-day="1" role="button" tabindex="0" aria-label="Door 1, not open yet" style="left:15.000%;top:46.600%;width:14.000%;height:8.400%"><span class="door-leaf">1</span></span>
+<span class="door is-locked" data-day="2" role="button" tabindex="0" aria-label="Door 2, not open yet" style="left:52.333%;top:66.600%;width:14.000%;height:8.400%"><span class="door-leaf">2</span></span>
+<span class="door is-locked" data-day="3" role="button" tabindex="0" aria-label="Door 3, not open yet" style="left:33.667%;top:26.600%;width:14.000%;height:8.400%"><span class="door-leaf">3</span></span>
+<span class="door is-locked" data-day="4" role="button" tabindex="0" aria-label="Door 4, not open yet" style="left:71.000%;top:46.600%;width:14.000%;height:8.400%"><span class="door-leaf">4</span></span>
+<span class="door is-locked" data-day="5" role="button" tabindex="0" aria-label="Door 5, not open yet" style="left:15.000%;top:66.600%;width:14.000%;height:8.400%"><span class="door-leaf">5</span></span>
+<span class="door is-locked" data-day="6" role="button" tabindex="0" aria-label="Door 6, not open yet" style="left:52.333%;top:36.600%;width:14.000%;height:8.400%"><span class="door-leaf">6</span></span>
+<span class="door is-locked" data-day="7" role="button" tabindex="0" aria-label="Door 7, not open yet" style="left:33.667%;top:76.600%;width:14.000%;height:8.400%"><span class="door-leaf">7</span></span>
+<span class="door is-locked" data-day="8" role="button" tabindex="0" aria-label="Door 8, not open yet" style="left:33.667%;top:56.600%;width:14.000%;height:8.400%"><span class="door-leaf">8</span></span>
+<span class="door is-locked" data-day="9" role="button" tabindex="0" aria-label="Door 9, not open yet" style="left:71.000%;top:26.600%;width:14.000%;height:8.400%"><span class="door-leaf">9</span></span>
+<span class="door is-locked" data-day="10" role="button" tabindex="0" aria-label="Door 10, not open yet" style="left:52.333%;top:46.600%;width:14.000%;height:8.400%"><span class="door-leaf">10</span></span>
+<span class="door is-locked" data-day="11" role="button" tabindex="0" aria-label="Door 11, not open yet" style="left:71.000%;top:66.600%;width:14.000%;height:8.400%"><span class="door-leaf">11</span></span>
+<span class="door is-locked" data-day="12" role="button" tabindex="0" aria-label="Door 12, not open yet" style="left:15.000%;top:36.600%;width:14.000%;height:8.400%"><span class="door-leaf">12</span></span>
+<span class="door is-locked" data-day="13" role="button" tabindex="0" aria-label="Door 13, not open yet" style="left:15.000%;top:76.600%;width:14.000%;height:8.400%"><span class="door-leaf">13</span></span>
+<span class="door is-locked" data-day="14" role="button" tabindex="0" aria-label="Door 14, not open yet" style="left:52.333%;top:56.600%;width:14.000%;height:8.400%"><span class="door-leaf">14</span></span>
+<span class="door is-locked" data-day="15" role="button" tabindex="0" aria-label="Door 15, not open yet" style="left:71.000%;top:36.600%;width:14.000%;height:8.400%"><span class="door-leaf">15</span></span>
+<span class="door is-locked" data-day="16" role="button" tabindex="0" aria-label="Door 16, not open yet" style="left:33.667%;top:66.600%;width:14.000%;height:8.400%"><span class="door-leaf">16</span></span>
+<span class="door is-locked" data-day="17" role="button" tabindex="0" aria-label="Door 17, not open yet" style="left:15.000%;top:26.600%;width:14.000%;height:8.400%"><span class="door-leaf">17</span></span>
+<span class="door is-locked" data-day="18" role="button" tabindex="0" aria-label="Door 18, not open yet" style="left:71.000%;top:76.600%;width:14.000%;height:8.400%"><span class="door-leaf">18</span></span>
+<span class="door is-locked" data-day="19" role="button" tabindex="0" aria-label="Door 19, not open yet" style="left:33.667%;top:46.600%;width:14.000%;height:8.400%"><span class="door-leaf">19</span></span>
+<span class="door is-locked" data-day="20" role="button" tabindex="0" aria-label="Door 20, not open yet" style="left:52.333%;top:76.600%;width:14.000%;height:8.400%"><span class="door-leaf">20</span></span>
+<span class="door is-locked" data-day="21" role="button" tabindex="0" aria-label="Door 21, not open yet" style="left:15.000%;top:56.600%;width:14.000%;height:8.400%"><span class="door-leaf">21</span></span>
+<span class="door is-locked" data-day="22" role="button" tabindex="0" aria-label="Door 22, not open yet" style="left:52.333%;top:26.600%;width:14.000%;height:8.400%"><span class="door-leaf">22</span></span>
+<span class="door is-locked" data-day="23" role="button" tabindex="0" aria-label="Door 23, not open yet" style="left:71.000%;top:56.600%;width:14.000%;height:8.400%"><span class="door-leaf">23</span></span>
+<span class="door is-locked" data-day="24" role="button" tabindex="0" aria-label="Door 24, not open yet" style="left:33.667%;top:36.600%;width:14.000%;height:8.400%"><span class="door-leaf">24</span></span>
+</div>
+<p id="door-message" role="status" hidden></p>
+<canvas id="snow" aria-hidden="true"></canvas>
+</main>
+<footer class="advent-footer">Figures and texts CC BY 4.0 · code MIT at github.com/philippweder/santa-poisson</footer>
+</body>
+</html>

@@ -1,0 +1,359 @@
+/* Styles of the advent calendar and the day pages. Plain CSS, no build step. */
+
+/* The palette. The test in tests/advent_dev/site checks these against Palette. */
+:root {
+  --night-blue: #14213D;
+  --forest-green: #1E6B45;
+  --deep-red: #A4243B;
+  --gold: #E0A526;
+  --snow-white: #F7F9FC;
+
+  /*
+   * The size of the title on the panel of an open door. Ticket #59 asks for at
+   * least 12px on a phone; 0.75rem is 12px at the browser's default root size of
+   * 16px, and grows with a larger default that a reader sets. A test converts it
+   * with that 16px.
+   * A door is at least 12.5% of the facade width, so at least 44px at 375px wide,
+   * and a title that does not fit is cut at the edge of the panel, not shrunk.
+   */
+  --door-panel-size: 0.75rem;
+}
+
+/* A hidden element stays hidden, even where a rule sets its display. */
+[hidden] {
+  display: none !important;
+}
+
+body {
+  margin: 0;
+  background: var(--night-blue);
+  color: var(--snow-white);
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  color: var(--gold);
+}
+
+main {
+  position: relative;
+  box-sizing: border-box;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.advent-header,
+.advent-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px 16px;
+  padding: 12px 16px;
+  font-size: 0.875rem;
+}
+
+/* The calendar: the facade and the doors share one box, so the percentages match. */
+.advent-calendar main {
+  text-align: center;
+}
+
+#countdown {
+  margin-bottom: 16px;
+}
+
+.countdown-clock {
+  margin: 0 0 8px;
+  font-size: 1.25rem;
+}
+
+#calendar {
+  position: relative;
+}
+
+.facade {
+  display: block;
+  width: 100%;
+}
+
+.facade svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* A door sits over one window, at the inline percentages the renderer writes. */
+.door {
+  position: absolute;
+  display: block;
+  perspective: 600px;
+  text-decoration: none;
+}
+
+.door:not(.is-locked) {
+  cursor: pointer;
+}
+
+.door:not(.is-locked):hover .door-leaf {
+  filter: brightness(1.12);
+}
+
+.door:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 2px;
+}
+
+/* The leaf is the front of the door; the panel behind it shows the title. */
+.door-leaf,
+.door-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.door-leaf {
+  z-index: 2;
+  transform-origin: left center;
+  backface-visibility: hidden;
+  transition: transform 600ms ease-in;
+  background: var(--deep-red);
+  color: var(--snow-white);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.door-panel {
+  z-index: 1;
+  padding: 2px;
+  overflow: hidden;
+  background: var(--snow-white);
+  color: var(--night-blue);
+  font-size: var(--door-panel-size);
+  line-height: 1.1;
+  text-align: center;
+  /* A word longer than the panel is broken, not cut off at its first letters. */
+  overflow-wrap: anywhere;
+  /*
+   * A title taller than the panel starts at the top edge and is cut at the bottom.
+   * Plain centring would cut both ends and lose the first line. A browser that does
+   * not know the safe keyword keeps the centring of the rule above.
+   */
+  align-items: safe center;
+}
+
+/* A locked door is dim, with no panel behind the leaf. */
+.door.is-locked .door-leaf {
+  background: var(--night-blue);
+  opacity: 0.55;
+}
+
+/* The 3D turn after a click, a 600 ms transition set in .door-leaf above. */
+.door.is-opening .door-leaf,
+.door.is-open .door-leaf {
+  transform: rotateY(-100deg);
+}
+
+/* A door that is already open jumps to its end state, with no turn. */
+.door.is-open .door-leaf {
+  transition: none;
+}
+
+/* A locked door shakes once when clicked. */
+.door.is-shaking {
+  animation: door-shake 400ms ease-in-out;
+}
+
+@keyframes door-shake {
+  20% {
+    transform: translateX(-4px);
+  }
+  40% {
+    transform: translateX(4px);
+  }
+  60% {
+    transform: translateX(-3px);
+  }
+  80% {
+    transform: translateX(2px);
+  }
+}
+
+/*
+ * The message of a locked door is fixed to the viewport, so that a tap on a phone
+ * shows it with no scroll, wherever the calendar is scrolled to. It takes no
+ * clicks, so it never covers a door from the finger. It sits above the snow.
+ */
+#door-message {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  left: 16px;
+  z-index: 4;
+  max-width: 28rem;
+  margin: 0 auto;
+  padding: 8px 16px;
+  border-radius: 4px;
+  background: var(--gold);
+  color: var(--night-blue);
+  text-align: center;
+  pointer-events: none;
+}
+
+/* The snow is drawn over the calendar and takes no clicks. */
+#snow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* The day card. */
+.advent-day main {
+  padding: 16px;
+}
+
+.card {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 24px;
+  border-radius: 8px;
+  background: var(--snow-white);
+  color: var(--night-blue);
+}
+
+.card-title {
+  margin: 0 0 4px;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.card-method {
+  margin: 0 0 16px;
+  color: var(--forest-green);
+  font-style: italic;
+}
+
+.card-media {
+  margin: 0 0 16px;
+}
+
+.card-media img,
+.card-media video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.scene {
+  position: relative;
+}
+
+.scene-preview {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.scene-load {
+  display: block;
+  margin: 8px auto 0;
+  padding: 8px 16px;
+  border: 0;
+  border-radius: 4px;
+  background: var(--gold);
+  color: var(--night-blue);
+  font: inherit;
+  cursor: pointer;
+}
+
+.scene-frame {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 70vh;
+  max-width: 100%;
+  border: 0;
+}
+
+.card-body {
+  overflow-wrap: break-word;
+}
+
+.card-body img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-body pre {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.card-body a {
+  color: var(--deep-red);
+}
+
+/* A long inline formula may break anywhere, so that it cannot widen the page. */
+.card-body .math.inline {
+  overflow-wrap: anywhere;
+}
+
+/* A long display formula scrolls inside its own box, not the page. */
+.card-body .math.block {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.card-packages,
+.card-byline {
+  margin: 8px 0 0;
+  color: var(--forest-green);
+  font-size: 0.875rem;
+}
+
+.card-code {
+  margin: 16px 0 0;
+  font-size: 0.875rem;
+}
+
+.card-code a {
+  color: var(--deep-red);
+}
+
+/* Phone: the calendar takes the full width, and the card the full screen. */
+@media (max-width: 699.98px) {
+  main {
+    padding: 8px;
+  }
+
+  .advent-day main {
+    padding: 0;
+  }
+
+  .card {
+    min-height: 100vh;
+    padding: 16px;
+    border-radius: 0;
+  }
+}
+
+/* Reduced motion: no turn, no shake, no transition. The script handles the rest. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
